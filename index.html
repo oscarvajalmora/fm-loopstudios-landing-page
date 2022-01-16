@@ -10,102 +10,101 @@
   <title>Frontend Mentor | Loopstudios landing page</title>
 </head>
 <body>
-  <div class="container">
-
+  <section class="hero">
     <header>
       <img src="images/logo.svg" alt="Loopstudios logo">
-      <nav>
+      <button id="btn-mobile-menu" class="nav-icon"><img src="images/icon-hamburger.svg" alt=""></button>
+      <nav id="mobile-menu">
         <ul>
-          <li>About</li>
-          <li>Careers</li>
-          <li>Events</li>
-          <li>Products</li>
-          <li>Support</li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Support</a></li>
         </ul>
       </nav>
     </header>
+    <h1>Immersive experiences that deliver</h1>
+  </section>
 
-    <main>
-      <div class="hero">
-        <h1>Immersive experiences that deliver</h1>
+  <main class="container">
+
+    <section class="about">
+      <img src="images/mobile/image-interactive.jpg" alt="User with VR" class="about-image">
+      <div class="about-description">
+          <h2>The leader in interactive VR</h2>
+          <p>Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
       </div>
+    </section>
 
-      <section class="about">
-        <img src="images/mobile/image-interactive.jpg" alt="User with VR" class="about-image">
-        <div class="about-description">
-            <h2>The leader in interactive VR</h2>
-            <p>Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
-        </div>
-      </section>
+    <section class="portfolio"> 
+        <h2>Our creations</h2>
+        <div class="portfolio-container">
 
-      <section class="portfolio"> 
-          <h2>Our creations</h2>
-          <div class="portfolio-container">
-
-            <div class="portfolio-item">
-              <img src="images/mobile/image-deep-earth.jpg" alt="Deep Hearth">
-              <h3>Deep Hearth</h3>
-            </div>
-
-            <div class="portfolio-item">
-              <img src="images/mobile/image-night-arcade.jpg" alt="Night Arcade">
-              <h3>Night Arcade</h3>
-            </div>
-
-            <div class="portfolio-item">
-              <img src="images/mobile/image-soccer-team.jpg" alt="Socccer Team VR">
-              <h3>Socccer Team VR</h3>
-            </div>
-
-            <div class="portfolio-item">
-              <img src="images/mobile/image-grid.jpg" alt="The Grid">
-              <h3>The Grid</h3>
-            </div>
-
-            <div class="portfolio-item">
-              <img src="images/mobile/image-from-above.jpg" alt="From Above">
-              <h3>From Up Above VR</h3>
-            </div>
-
-            <div class="portfolio-item">
-              <img src="images/mobile/image-pocket-borealis.jpg" alt="Pocket Borealis">
-              <h3>Pocket Borealis</h3>
-            </div>
-
-            <div class="portfolio-item">
-              <img src="images/mobile/image-curiosity.jpg" alt="The Curiosity">
-              <h3>The Curiosity</h3>
-            </div>
-
-
-            <div class="portfolio-item">
-              <img src="images/mobile/image-fisheye.jpg" alt="Make it fisheye">
-              <h3>Make it fisheye</h3>
-            </div>
+          <div class="portfolio-item">
+            <img src="images/mobile/image-deep-earth.jpg" alt="Deep Hearth">
+            <h3>Deep Hearth</h3>
           </div>
-          <a href="#" class="portfolio-btn-link">See All</a>
-      </section>
 
-    </main>
+          <div class="portfolio-item">
+            <img src="images/mobile/image-night-arcade.jpg" alt="Night Arcade">
+            <h3>Night Arcade</h3>
+          </div>
 
-    <footer>
-      <img src="images/logo.svg" alt="Loopstudios logo">
-      <ul>
-        <li>About</li>
-        <li>Careers</li>
-        <li>Events</li>
-        <li>Products</li>
-        <li>Support</li>
-      </ul>
-      <div class="social-container">
-        <img src="images/icon-facebook.svg" alt="Facebook">
-        <img src="images/icon-twitter.svg" alt="Twitter">
-        <img src="images/icon-pinterest.svg" alt="Pinterest">
-        <img src="images/icon-instagram.svg" alt="Instagram">
-      </div>
-      <p>© 2021 Loopstudios. All rights reserved.</p>
-    </footer>
-  </div>
+          <div class="portfolio-item">
+            <img src="images/mobile/image-soccer-team.jpg" alt="Socccer Team VR">
+            <h3>Socccer Team VR</h3>
+          </div>
 
+          <div class="portfolio-item">
+            <img src="images/mobile/image-grid.jpg" alt="The Grid">
+            <h3>The Grid</h3>
+          </div>
+
+          <div class="portfolio-item">
+            <img src="images/mobile/image-from-above.jpg" alt="From Above">
+            <h3>From Up Above VR</h3>
+          </div>
+
+          <div class="portfolio-item">
+            <img src="images/mobile/image-pocket-borealis.jpg" alt="Pocket Borealis">
+            <h3>Pocket Borealis</h3>
+          </div>
+
+          <div class="portfolio-item">
+            <img src="images/mobile/image-curiosity.jpg" alt="The Curiosity">
+            <h3>The Curiosity</h3>
+          </div>
+
+
+          <div class="portfolio-item">
+            <img src="images/mobile/image-fisheye.jpg" alt="Make it fisheye">
+            <h3>Make it fisheye</h3>
+          </div>
+        </div>
+        <a href="#" class="portfolio-btn-link">See All</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <img src="images/logo.svg" alt="Loopstudios logo">
+    <ul>
+      <li>About</li>
+      <li>Careers</li>
+      <li>Events</li>
+      <li>Products</li>
+      <li>Support</li>
+    </ul>
+    <div class="social-container">
+      <img src="images/icon-facebook.svg" alt="Facebook">
+      <img src="images/icon-twitter.svg" alt="Twitter">
+      <img src="images/icon-pinterest.svg" alt="Pinterest">
+      <img src="images/icon-instagram.svg" alt="Instagram">
+    </div>
+    <p>© 2021 Loopstudios. All rights reserved.</p>
+  </footer>
+
+  <script src="js/scripts.js"></script>
 </body>
 </html>
