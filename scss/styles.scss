@@ -84,5 +84,154 @@ body {
 }
 
 .container {
-    width: 327px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: 327px;
+
+    img {
+        width: 100%;
+    }
+
+    section h2 {
+        font-size: 32px;
+        font-family: $font-family-josefina;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+
+    .about {
+        margin-top: 96px;
+
+        &-description {
+            text-align: center;
+            padding: 0 29px;
+
+            h2 {
+                margin-top: 48px;
+            }
+
+            p { 
+                font-size: $font-size-normal;
+                font-family: $font-family-alata;
+                font-weight: 400;
+                line-height: 25px;
+                margin-top: 16px;
+                color: $color-very-dark-gray; 
+            }
+        }
+
+    }
+
+    .portfolio {
+        text-align: center;
+        margin-top: 96px;
+
+        &-container {
+            margin-top: 48px;
+
+            .portfolio-item {
+                position: relative;
+                background-color: $color-black;
+                margin-bottom: 24px;
+                height: 120px;
+
+                img {
+                    opacity: .5;
+                }
+
+                h3 {
+                    position: absolute;
+                    bottom: 30px;
+                    left: 21px;
+                    font-family: $font-family-josefina;
+                    color: $color-white;
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    font-size: 24px;
+                    text-align: left;
+                }
+            }
+
+        }
+
+        &-btn-link {
+            border: 1px solid $color-black;
+            padding: 15px 38px;
+            font-size: 14px;
+            font-family: $font-family-alata;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $color-black;
+            letter-spacing: 5px;
+            display: inline-block;
+
+            &:hover {
+                background-color: $color-black;
+                color: $color-white  ;
+            }
+        }
+
+    }
+}
+
+footer {
+    background-color: $color-black;
+    margin-top: 96px;
+    color: $color-white;
+    font-family: $font-family-alata;
+    font-size: $font-size-normal;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 56px 52px;
+
+    img {
+        width: 144px;
+    }
+
+    ul {
+        margin-top: 32px;
+
+        li {
+            margin-bottom: 16px; 
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: $color-white;
+            }
+
+        }
+
+        :last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .social-container {
+        margin-top: 48px;
+        
+        a {
+            text-decoration: none;
+            margin-right: 16px;
+            img {
+                width: 24px;
+            }
+        }
+
+        :last-child {
+            margin-right: 0;
+        }
+    }
+
+    p {
+        margin-top: 16px;
+        color: $color-dark-gray;
+        font-size: 15px;
+    }
+
 }

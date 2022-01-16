@@ -72,7 +72,129 @@ body {
 }
 
 .container {
-  width: 327px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 327px;
+}
+.container img {
+  width: 100%;
+}
+.container section h2 {
+  font-size: 32px;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.container .about {
+  margin-top: 96px;
+}
+.container .about-description {
+  text-align: center;
+  padding: 0 29px;
+}
+.container .about-description h2 {
+  margin-top: 48px;
+}
+.container .about-description p {
+  font-size: 15px;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  line-height: 25px;
+  margin-top: 16px;
+  color: dimgray;
+}
+.container .portfolio {
+  text-align: center;
+  margin-top: 96px;
+}
+.container .portfolio-container {
+  margin-top: 48px;
+}
+.container .portfolio-container .portfolio-item {
+  position: relative;
+  background-color: black;
+  margin-bottom: 24px;
+  height: 120px;
+}
+.container .portfolio-container .portfolio-item img {
+  opacity: 0.5;
+}
+.container .portfolio-container .portfolio-item h3 {
+  position: absolute;
+  bottom: 30px;
+  left: 21px;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: left;
+}
+.container .portfolio-btn-link {
+  border: 1px solid black;
+  padding: 15px 38px;
+  font-size: 14px;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 5px;
+  display: inline-block;
+}
+.container .portfolio-btn-link:hover {
+  background-color: black;
+  color: white;
+}
+
+footer {
+  background-color: black;
+  margin-top: 96px;
+  color: white;
+  font-family: "Alata", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 56px 52px;
+}
+footer img {
+  width: 144px;
+}
+footer ul {
+  margin-top: 32px;
+}
+footer ul li {
+  margin-bottom: 16px;
+  list-style: none;
+}
+footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+footer ul :last-child {
+  margin-bottom: 0;
+}
+footer .social-container {
+  margin-top: 48px;
+}
+footer .social-container a {
+  text-decoration: none;
+  margin-right: 16px;
+}
+footer .social-container a img {
+  width: 24px;
+}
+footer .social-container :last-child {
+  margin-right: 0;
+}
+footer p {
+  margin-top: 16px;
+  color: #8c8c8c;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */
