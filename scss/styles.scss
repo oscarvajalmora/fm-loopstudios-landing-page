@@ -15,7 +15,8 @@ body {
 .hero {
     background-image: url('../images/mobile/image-hero.jpg');
     background-size: cover;
-    height: 650px;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
     padding: 50px 23px;
     display: flex;
     flex-direction: column;
@@ -218,6 +219,7 @@ footer {
         a {
             text-decoration: none;
             margin-right: 16px;
+
             img {
                 width: 24px;
             }
