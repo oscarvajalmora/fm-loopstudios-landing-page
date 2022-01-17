@@ -1,5 +1,6 @@
 @import '_colors';
 @import '_typography';
+@import '_breakpoints.scss'; 
 
 * {
     margin: 0;
@@ -20,6 +21,11 @@ body {
     flex-direction: column;
     box-shadow: inset 0 0 0 100vw rgba($color-black, .7);
     height: 650px;
+
+    @media only screen and (min-width: $mobile) {
+        padding: 64px 165px;
+        background-image: url('../images/desktop/image-hero.jpg');
+    }
     
     header {
         display: flex;
@@ -36,6 +42,50 @@ body {
             cursor: pointer;
             padding: 0;
             z-index: 2;
+
+            @media screen and (min-width: $mobile) {
+                display: none;
+            }
+
+
+        }
+
+        nav#desktop-menu {
+            display: none;
+            @media only screen and (min-width: $mobile) {
+                display: inline-block;
+            }
+
+            ul {
+                list-style: none;
+                :last-child {
+                    margin-right: 0;
+                }
+
+                li {
+                    display: inline-block;
+                    margin-right: 32px;
+                    a {
+                        color: $color-white;;
+                        font-size: $font-size-normal;
+                        font-family: $font-family-alata;
+                        font-weight: 400;
+                        text-decoration: none;
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+
+                        &:hover::after {
+                            content: '';
+                            position: absolute;
+                            background-color: $color-white;
+                            width: 24px;
+                            height: 2px;
+                            bottom: -8px;
+                        }
+                    }
+                }
+            }
         }
 
         nav#mobile-menu {
@@ -80,6 +130,13 @@ body {
         line-height: 1;
         font-weight: 300;
         margin-top: 170px;
+
+        @media only screen and (min-width: $mobile){
+            max-width: 650px;
+            font-size: 72px;
+            line-height: 70px;
+        }
+
     }
 }
 
@@ -88,6 +145,11 @@ body {
     flex-direction: column;
     align-self: center;
     max-width: 327px;
+
+    @media only screen and (min-width: $mobile) {
+        width: 1111px;
+        max-width: 1111px;
+    }
 
     img {
         width: 100%;
@@ -103,12 +165,32 @@ body {
     .about {
         margin-top: 96px;
 
+        @media only screen and (min-width: $mobile) {
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+            margin-top: 160px;
+
+            &-image {
+                width: 731px;
+                position: relative;
+            }
+            
+        }
+
         &-description {
             text-align: center;
             padding: 0 29px;
+            position: absolute;
+            right: 0px;
+            background-color: $color-white;
 
             h2 {
                 margin-top: 48px;
+
+                @media only screen and (min-width: $mobile) {
+                    font-size: 48px;
+                }
             }
 
             p { 
@@ -119,6 +201,19 @@ body {
                 margin-top: 16px;
                 color: $color-very-dark-gray; 
             }
+
+            @media only screen and (min-width: $mobile) {
+                text-align: left;
+                padding: 96px 0 0 96px;
+                max-width: 541px;
+
+                h2 {
+                    font-size: 48px;
+                }
+                
+            }
+    
+
         }
 
     }
@@ -126,6 +221,8 @@ body {
     .portfolio {
         text-align: center;
         margin-top: 96px;
+        display: flex;
+        flex-direction: column;
 
         &-container {
             margin-top: 48px;
@@ -134,7 +231,7 @@ body {
                 position: relative;
                 background-color: $color-black;
                 margin-bottom: 24px;
-                height: 120px;
+                height: 120px; 
 
                 img {
                     opacity: .5;
@@ -170,6 +267,51 @@ body {
             &:hover {
                 background-color: $color-black;
                 color: $color-white  ;
+            }
+        }
+
+        @media only screen and (min-width: $mobile) {
+            order: 0;
+            flex-direction: row;
+            text-align: left;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 184px;
+
+            h2 {
+                flex-basis: 50%;
+            }
+
+            &-container {
+                order: 2;
+                flex-basis: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .portfolio-item {
+                    position: relative;
+                    background-color: $color-black;
+                    margin-bottom: 24px;
+                    width: 256px;
+                    height: 450px; 
+
+                    &:hover {
+                        background-color: $color-white;
+                        h3 {
+                            color: $color-black;
+                        }
+                    }
+    
+                    h3 { 
+                        font-size: 32px;
+                    }
+                }
+            }
+
+            &-btn-link {
+                padding: 13px 40px;
+                order: 1;
             }
         }
 
@@ -233,6 +375,63 @@ footer {
         margin-top: 16px;
         color: $color-dark-gray;
         font-size: 15px;
+    }
+
+    @media only screen and (min-width: $mobile) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        img {
+            width: 144px;
+            flex-basis: 50%;
+            order: 0;
+        }
+
+        ul {
+            order: 2;
+            list-style: none;
+            :last-child {
+                margin-right: 0;
+            }
+
+            li {
+                display: inline-block;
+                margin-right: 32px;
+                a {
+                    color: $color-white;;
+                    font-size: $font-size-normal;
+                    font-family: $font-family-alata;
+                    font-weight: 400;
+                    text-decoration: none;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+
+                    &:hover::after {
+                        content: '';
+                        position: absolute;
+                        background-color: $color-white;
+                        width: 24px;
+                        height: 2px;
+                        bottom: -8px;
+                    }
+                }
+            }
+        }
+
+        .social-container {
+            text-align: right;
+            flex-basis: 50%;
+            order: 1;
+        }
+
+        p {
+            text-align: right;
+            flex-basis: 50%;
+            order: 4;
+        }
+
     }
 
 }
